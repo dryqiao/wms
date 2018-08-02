@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+  wms-fe:
+    image: wms-fe
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 1234:7001
+  wms-server:
+    image: wms-egg:0.1
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 1235:80

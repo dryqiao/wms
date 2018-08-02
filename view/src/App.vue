@@ -59,7 +59,7 @@
 
 </script>
 
-<style>
+<style scoped>
     .layout {
         background: #f5f7f9;
         position: relative;

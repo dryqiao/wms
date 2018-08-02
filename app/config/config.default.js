@@ -11,7 +11,9 @@ module.exports = appInfo => {
 
   config.mongoose = {
     url: 'mongodb://118.24.157.90:27017/wms',
-    options: {},
+    options: {
+      autoReconnect: true
+    },
   };
   config.security = {
     domainWhiteList: ['http://localhost:8081'],
